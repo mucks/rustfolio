@@ -31,9 +31,16 @@ pub struct LoginResponse {
     pub token: String,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ErrorResponse {
+    pub message: String,
+    pub error: String,
+}
+
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Claims {
     pub sub: String,
     pub company: String,
+    pub user_id: String,
     pub exp: usize,
 }

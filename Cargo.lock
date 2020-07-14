@@ -1416,11 +1416,13 @@ name = "rustfolio"
 version = "0.1.0"
 dependencies = [
  "actix-rt",
+ "actix-service",
  "actix-web",
  "anyhow",
  "bcrypt",
  "diesel",
  "dotenv",
+ "futures",
  "jsonwebtoken",
  "serde",
  "serde_json",

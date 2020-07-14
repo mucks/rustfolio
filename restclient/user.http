@@ -1,0 +1,25 @@
+
+### Get User
+GET http://127.0.0.1:8080/user/7362de62-27f3-415f-9b35-ca47e36478c4
+
+### Test User
+GET http://127.0.0.1:8080/test-user
+
+### Add new User
+POST http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+    "email": "testuser@mail.test",
+    "username": "testuser",
+    "password": "testpassword"
+}
+
+### Login User
+POST http://127.0.0.1:8080/login
+Content-Type: application/json
+
+{
+    "email": "testuser@mail.test",
+    "password": "testpassword"
+}
